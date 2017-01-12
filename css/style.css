@@ -129,7 +129,7 @@ header .gnb > li > ul > li > a:hover { color:#000;}
 }
 
 .center .visual{
-    width:904px;  height: 380px;
+    width:904px;  height: 385px;
     overflow: hidden;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -138,8 +138,7 @@ header .gnb > li > ul > li > a:hover { color:#000;}
 
 .center .visual .panel{
     width: 3620px; 
-    height: 355px;
-    overflow:hidden;
+    height: 360px;
 }
 
 .center .visual .panel li{
@@ -157,16 +156,16 @@ header .gnb > li > ul > li > a:hover { color:#000;}
 }
 
 
-.visual .panel li:nth-child(1) a{
+.visual .panel .s1 a{
     background-image: url(../img/slider01.png);
 }
-.visual .panel li:nth-child(2) a{
+.visual .panel .s2 a{
     background-image: url(../img/slider02.png);    
 }
-.visual .panel li:nth-child(3) a{
+.visual .panel .s3 a{
     background-image: url(../img/slider03.png);    
 }
-.visual .panel li:nth-child(4) a{
+.visual .panel .s4 a{
     background-image: url(../img/slider04.jpg);    
 }
 
@@ -185,9 +184,44 @@ header .gnb > li > ul > li > a:hover { color:#000;}
     float: left;
 }
 .center .navi li:hover{background-image: url(../img/on.png);}
-.center .navi li:active{background-image: url(../img/on.png);}
+.center .navi .on {background-image: url(../img/on.png);}
+
+.play_ctl {
+    position: absolute;
+    bottom: 0px;
+}
+
+.play_ctl li{
+    float: left;
+    margin-right: 5px;
+}
+.play_ctl li a{
+    display: block;
+    width: 16px;
+    height: 18px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-image: url(../img/btns-next-prev.png);
+}
+
+.play_ctl li:nth-child(1) a{background-position:2px 0px;}
+.play_ctl li:nth-child(2) a{background-position:-10px 0px;}
+.play_ctl li:nth-child(3) a{background-position:-23px 0px;}
+.play_ctl li:nth-child(4) a{background-position:-42px 0px;}
 
 
+.play_ctl li:nth-child(1):hover a{background-position:2px -18px;}
+.play_ctl li:nth-child(2):hover a{background-position:-10px -18px;}
+.play_ctl li:nth-child(3):hover a{background-position:-23px -18px;}
+.play_ctl li:nth-child(4):hover a{background-position:-42px -18px;}
+
+
+
+
+
+
+
+/******************************************************/
 .center .mainUl{
     margin:0 auto;
     width:904px;
