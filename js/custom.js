@@ -25,11 +25,11 @@ $(document).ready(function(){
             i = len-1;
         }
         else{
-            i--;
+            i = i-1;
         }
 
         Sliding();
-    },500);
+    });
 
     //next 구현
 
@@ -39,11 +39,11 @@ $(document).ready(function(){
             i = 0;
         }
         else{
-            i++;
+            i = i+1;
         }
 
         Sliding();
-    },500);
+    });
 
 
     //버튼 클릭시 on클래스 주고 그 페이지로 가기
@@ -66,7 +66,7 @@ $(document).ready(function(){
 
         $(".navi li").removeClass("on");
         $(".navi li").eq(i).addClass("on");
-        $(".panel").animate({"margin-left": -wid * i },500);
+        $(".panel").animate({"margin-left": -wid * i },1500);
 
     }
 
@@ -80,10 +80,11 @@ $(document).ready(function(){
             i = 0;
         }
         else{
-            i++;
+            i = i+1;
         }
 
         Sliding();
+
     },2000);
 
 
@@ -109,10 +110,11 @@ $(document).ready(function(){
                 i = 0;
             }
             else{
-                i++;
+                i = i+1;
             }
 
             Sliding();
+
         },2000);
 
     });
